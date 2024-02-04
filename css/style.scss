@@ -880,11 +880,17 @@ li::selection{
         color: #22262A;
     font-family: 'Poppins', sans-serif;
     line-height: 40.5px;
+    margin-top: 53px;
+    margin-left: -50px;
     }
     .data_be{
         display: flex;
-        justify-content: space-between;
-        padding: 120px 205px;
+        gap: 257px;
+        justify-content: center;
+        margin-top: 115px;
+    }
+    .te1{
+        margin-top: 40px;
     }
     .img_data{
         align-items: center;
