@@ -883,6 +883,7 @@ li::selection {
   padding: 0 var(--padding-1);
   gap: 2rem;
   width: 100%;
+  margin-top: 23px;
 }
 
 .product-card {
@@ -928,13 +929,31 @@ li::selection {
   right: -1rem;
   width: 40px;
   height: 40px;
-  background-color: var(--white);
+  background-color: rgba(248, 245, 245, 0.583);
   border-radius: 50%;
   color: var(--black-25);
   z-index: 10;
+  font-size: 0px;
   cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
   opacity: 0;
   transition: all 0.3s ease, top 0.3s ease 0.2s;
+}
+
+.kor_img {
+  width: 30px;
+  height: 30px;
+}
+
+.lik_img {
+  width: 25px;
+  height: 25px;
+  margin-left: 1.5px;
+}
+
+.lik_img:hover {
+  background: rgba(255, 255, 255, 0);
 }
 
 .product-card:hover .product-card__btn {
@@ -947,7 +966,7 @@ li::selection {
 }
 
 .product-card__btn:hover {
-  background-color: var(--black);
+  background-color: var(--white);
   color: var(--white-25);
 }
 
@@ -970,53 +989,30 @@ a.active {
   color: blue;
 }
 
-.product-card__btn-radio {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  overflow: hidden;
-}
-
-.product-card__btn-radio span {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  flex-shrink: 0;
-  border-radius: 50%;
-  transition: all 0.3s ease;
-}
-
-.product-card__btn-radio.selected {
-  border: 1.5px solid var(--black);
-}
-
-.product-card__btn-radio.selected span {
-  width: 15px;
-  height: 15px;
-}
-
-[data-tooltip]::before {
-  content: attr(data-tooltip);
-  position: absolute;
-  background-color: var(--black);
-  padding: 5px 10px;
-  right: calc(100% + 5px);
-  border-radius: var(--border-5);
-  white-space: nowrap;
-  font-size: 0.8rem;
-  color: var(--white);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.3s ease;
-}
-
 [data-tooltip]:hover::before {
   opacity: 1;
+}
+
+.product-card__text {
+  font-size: 18px;
+  color: #223263;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.product-card__price {
+  font-size: 18px;
+  font-weight: 700;
+  color: #40BFFF;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.img_url {
+  display: flex;
+  justify-content: center;
+  width: 280px;
+  height: 272.5px;
+  border-radius: 5px;
 }/*# sourceMappingURL=style.css.map */

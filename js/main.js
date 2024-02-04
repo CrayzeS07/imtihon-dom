@@ -57,15 +57,19 @@ function displayProducts(products) {
         mostPopPorducts.innerHTML += `
             <div class="product-card" data-product-id="${id}" data-category="${category}">
                 <div class="product-card__container">
-                    <div class="product-card__btn cart" data-tooltip="add to cart"><span class="material-symbols-rounded"> shopping_bag </span></div>
-                    <div class="product-card__btn fav" data-tooltip="add to wishlist"><span class="material-symbols-rounded"> favorite </span></div>
+                    <div class="product-card__btn cart" ><span class="material-symbols-rounded"></span>
+                        <img class=kor_img src="/img/korzinka_img_1.png" alt="img_2">
+                    </div>
+                    <div class="product-card__btn fav"><span class="material-symbols-rounded"></span>
+                        <img class=lik_img src="/img/like_1.png" alt="img_2">
+                    </div>
                     <div class="product-card__img">
-                        <img src="${image}" alt="${name}" />
+                        <img class="img_url" src="${image}" alt="${name}" />
                     </div>
                 </div>
                 <div class="product-card__description">
                     <div class="product-card__text">${title}</div>
-                    <div class="product-card__price">${price}</div>
+                    <div class="product-card__price">$${price}</div>
                 </div>
             </div>`;
     });
@@ -107,3 +111,7 @@ fetch(jsonFile)
 			displayProducts(data);
 		});
     });
+//
+const tavar1 = document.querySelector('.tavar1');
+const btn_cart = ('product-card__text');
+
