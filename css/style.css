@@ -902,7 +902,7 @@ li::selection {
   height: 360px;
   width: 100%;
   position: relative;
-  background-color: var(--white-55);
+  background-color: #fff;
   overflow: hidden;
 }
 
@@ -939,16 +939,19 @@ li::selection {
   font-weight: 500;
   opacity: 0;
   transition: all 0.3s ease, top 0.3s ease 0.2s;
+  box-shadow: 4px 5px 17px -11px rgba(0, 0, 0, 0.55);
 }
 
 .kor_img {
   width: 30px;
   height: 30px;
+  box-shadow: 4px 5px 17px -11px rgba(0, 0, 0, 0.55);
 }
 
 .lik_img {
   width: 25px;
   height: 25px;
+  box-shadow: 4px 5px 17px -11px rgba(0, 0, 0, 0.55);
   margin-left: 1.5px;
 }
 
@@ -1015,4 +1018,10 @@ a.active {
   width: 280px;
   height: 272.5px;
   border-radius: 5px;
+  margin-top: 50px;
+}
+
+.product-card {
+  box-shadow: 4px 5px 17px -11px rgba(0, 0, 0, 0.55);
+  border-radius: 10px;
 }/*# sourceMappingURL=style.css.map */
