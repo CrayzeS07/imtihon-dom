@@ -1024,4 +1024,22 @@ a.active {
 .product-card {
   box-shadow: 4px 5px 17px -11px rgba(0, 0, 0, 0.55);
   border-radius: 10px;
+}
+
+.data_text {
+  font-size: 27px;
+  font-weight: 500;
+  color: #22262A;
+  font-family: "Poppins", sans-serif;
+  line-height: 40.5px;
+}
+
+.data_be {
+  display: flex;
+  justify-content: space-between;
+  padding: 120px 205px;
+}
+
+.img_data {
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
